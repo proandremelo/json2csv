@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JSON To CSV</title>
+        <meta charset="utf-8">
+        <meta name="author" content="André Melo">
+        <meta name="description" content="An application thats converts JSON files into CSV.">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/convert.js" defer></script>
+    </head>
+    <body>
+        <div class="container-app">
+            <div class="container1">
+                <div class="box1">    
+                    <form>
+                        <select>
+                            <option>JSON</option>
+                            <option>CSV</option>
+                        </select>
+                        <br>
+                        <textarea id="inputText"></textarea>
+                        <input type="button" value="Clear" onclick="clearInput()" />
+                    </form>
+                </div>
+                <div class="box2">
+                    <br>
+                    <form>
+                        <textarea id="output"></textarea>
+                        <input type="button" value="Clear" onclick="clearOutput()" />
+                        <input type="button" value="Save" />
+                    </form>
+                </div>
+            </div>
+            <div class="container2">
+                <input type="file" id="inputFile" name="inputFile" accept="json"/>
+            </div>
+            <div class="container3">
+                <input type="button" value="Convert" onclick="convert()"/>
+            </div>
+        </div>
+    </body>
+</html>

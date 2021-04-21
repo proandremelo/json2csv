@@ -1,0 +1,8 @@
+{
+    "name" : "Albert",
+    "age" : 19,
+    "sex" : "Male",
+    "address" : "General Marvin st, 533 - St. Louis, UK",
+    "covidTested" : true,
+    "covidTestResult" : false
+}
